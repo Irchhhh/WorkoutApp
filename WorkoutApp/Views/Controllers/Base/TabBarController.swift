@@ -26,7 +26,7 @@ final class TabBarController: UITabBarController {
         fatalError("init(coder:) has not been implemented")
     }
     private func tintColors() {
-        tabBar.tintColor = #colorLiteral(red: 0, green: 0.9490593804, blue: 0.5288625302, alpha: 1)
+        tabBar.tintColor = BaseViewController.greenColor
         tabBar.barTintColor = #colorLiteral(red: 0.2605174184, green: 0.2605243921, blue: 0.260520637, alpha: 1)
         tabBar.backgroundColor = .black
         
@@ -36,9 +36,9 @@ final class TabBarController: UITabBarController {
     }
     
     let overviewViewController = OverviewController()
-    let sessionViewController = UIViewController()
-    let progressViewController = UIViewController()
-    let settingsViewController = UIViewController()
+    let sessionViewController = SessionViewController()
+    let progressViewController = ProgressViewController()
+    let settingsViewController = SettingsViewController()
 
     func navigationControllers() {
        let overviewNavigationController = NavigationBarController(rootViewController: overviewViewController)

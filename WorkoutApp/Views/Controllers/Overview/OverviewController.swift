@@ -7,7 +7,9 @@
 
 
 class OverviewController: BaseViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Overview"
     }
 }

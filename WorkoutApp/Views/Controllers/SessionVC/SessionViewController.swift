@@ -7,23 +7,20 @@
 
 import UIKit
 
-class SessionViewController: UIViewController {
+class SessionViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        navigationController?.tabBarItem.title = "Session"
+        addNavButton(at: .left, with: "Pause")
+        addNavButton(at: .right, with: "Finish")
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        navigationItem.title = "High Intensity Cardio"
+        
     }
-    */
+  
 
 }
