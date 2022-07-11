@@ -19,8 +19,7 @@ final class NavigationBarController: UINavigationController {
         navigationBar.isTranslucent = false //Окрашивает всё пространство
         navigationBar.standardAppearance.titleTextAttributes = [
             .foregroundColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1),
-            .font: UIFont(name: "Helvetica", size: 17) ?? UIFont()
+            .font: UIFont(name: BaseViewController.font, size: 17) ?? UIFont()
         ]
-        navigationBar.addBottomBorder(with: .gray, height: 1)
     }
 }

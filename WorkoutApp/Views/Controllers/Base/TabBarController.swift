@@ -16,6 +16,12 @@ enum Tabs: Int {
 
 final class TabBarController: UITabBarController {
     
+    let overviewViewController = OverviewController()
+    let sessionViewController = SessionViewController()
+    let progressViewController = ProgressViewController()
+    let settingsViewController = SettingsViewController()
+
+
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         tintColors()
@@ -25,21 +31,7 @@ final class TabBarController: UITabBarController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    private func tintColors() {
-        tabBar.tintColor = BaseViewController.greenColor
-        tabBar.barTintColor = #colorLiteral(red: 0.2605174184, green: 0.2605243921, blue: 0.260520637, alpha: 1)
-        tabBar.backgroundColor = .black
-        
-        tabBar.layer.borderColor = #colorLiteral(red: 0.2605174184, green: 0.2605243921, blue: 0.260520637, alpha: 1)
-        tabBar.layer.borderWidth = 1
-        tabBar.layer.masksToBounds = true
-    }
     
-    let overviewViewController = OverviewController()
-    let sessionViewController = SessionViewController()
-    let progressViewController = ProgressViewController()
-    let settingsViewController = SettingsViewController()
-
     func navigationControllers() {
        let overviewNavigationController = NavigationBarController(rootViewController: overviewViewController)
        let sessionNavigationController = NavigationBarController(rootViewController: sessionViewController)
@@ -78,4 +70,11 @@ final class TabBarController: UITabBarController {
         ],
                            animated: false)
     }
+    
+    private func tintColors() {
+        tabBar.tintColor = BaseViewController.greenColor
+        tabBar.barTintColor = #colorLiteral(red: 0.2605174184, green: 0.2605243921, blue: 0.260520637, alpha: 1)
+        tabBar.backgroundColor = .black
+    }
+    
 }

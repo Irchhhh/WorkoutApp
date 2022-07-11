@@ -12,10 +12,10 @@
 		8C13947B2866571C003A68C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C13947A2866571C003A68C3 /* Assets.xcassets */; };
 		8C13947E2866571C003A68C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C13947C2866571C003A68C3 /* LaunchScreen.storyboard */; };
 		8C13948628665971003A68C3 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C13948528665971003A68C3 /* TabBarController.swift */; };
+		8C77D0B1286CB25F0012CAC3 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77D0B0286CB25F0012CAC3 /* SecondaryButton.swift */; };
 		8CB2FFB52869D179001F3D24 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB2FFB42869D179001F3D24 /* NavBarController.swift */; };
 		8CB2FFB72869D45D001F3D24 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB2FFB62869D45D001F3D24 /* BaseViewController.swift */; };
 		8CB2FFB92869D994001F3D24 /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB2FFB82869D994001F3D24 /* OverviewController.swift */; };
-		8CB2FFBB2869DA72001F3D24 /* UIView + extensions .swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB2FFBA2869DA72001F3D24 /* UIView + extensions .swift */; };
 		8CB2FFC02869DD60001F3D24 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB2FFBF2869DD60001F3D24 /* SettingsViewController.swift */; };
 		8CB2FFC22869DD71001F3D24 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB2FFC12869DD71001F3D24 /* SessionViewController.swift */; };
 		8CB2FFC42869DD7D001F3D24 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB2FFC32869DD7D001F3D24 /* ProgressViewController.swift */; };
@@ -29,10 +29,10 @@
 		8C13947D2866571C003A68C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C13947F2866571C003A68C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C13948528665971003A68C3 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		8C77D0B0286CB25F0012CAC3 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		8CB2FFB42869D179001F3D24 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		8CB2FFB62869D45D001F3D24 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		8CB2FFB82869D994001F3D24 /* OverviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewController.swift; sourceTree = "<group>"; };
-		8CB2FFBA2869DA72001F3D24 /* UIView + extensions .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + extensions .swift"; sourceTree = "<group>"; };
 		8CB2FFBF2869DD60001F3D24 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		8CB2FFC12869DD71001F3D24 /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
 		8CB2FFC32869DD7D001F3D24 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +101,7 @@
 		8CB2FFB32869D14D001F3D24 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8C77D0B0286CB25F0012CAC3 /* SecondaryButton.swift */,
 				8CB2FFB22869D138001F3D24 /* Controllers */,
 			);
 			path = Views;
@@ -109,7 +110,6 @@
 		8CB2FFBC2869DA7B001F3D24 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				8CB2FFBA2869DA72001F3D24 /* UIView + extensions .swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -235,7 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CB2FFBB2869DA72001F3D24 /* UIView + extensions .swift in Sources */,
+				8C77D0B1286CB25F0012CAC3 /* SecondaryButton.swift in Sources */,
 				8CB2FFB72869D45D001F3D24 /* BaseViewController.swift in Sources */,
 				8C13948628665971003A68C3 /* TabBarController.swift in Sources */,
 				8CB2FFC22869DD71001F3D24 /* SessionViewController.swift in Sources */,
